@@ -1,5 +1,9 @@
 -- Guard13007 Industries File System
 
+local tree = {}
+
+--TODO determine how to build master tree
+
 local function getPath(path)
     local result = tree
 
@@ -27,7 +31,9 @@ function list(path)
     local result = getPath(path)
     if type(result) == "table" then
         --TODO process
-        -- (we can't return it raw, we need to simply get what's in it)
+        -- (we can't return it raw, we need to simply get what's in it ??)
+    elseif type(result) == "nil" then
+        error("Not a directory")
     end
 end
 
