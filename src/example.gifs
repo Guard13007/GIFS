@@ -1,0 +1,16 @@
+-- an example fs.gifs file
+{
+    version = 2,
+    tree = {
+        directory = {
+            file = 1,
+            subdir = {
+                file = 2,
+                -- note the gap in used IDs, some files have been deleted
+                file3 = 8
+            }
+            -- notice how no empty directories are saved
+        }
+    },
+    uuid = "a version 4 UUID"
+}

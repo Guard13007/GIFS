@@ -1,0 +1,11 @@
+-- this is an alternate structure for an fs.gifs I am considering
+-- it might take less disk space
+{
+    version = 3,
+    tree = {
+        ["directory/file"] = 1,
+        ["directory/subdir/file"] = 2,
+        ["directory/subdir/file3"] = 8
+    },
+    uuid = "a version 4 UUID"
+}
